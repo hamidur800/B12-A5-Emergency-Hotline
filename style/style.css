@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+.containar {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.hind-madurai {
+  font-family: "Hind Madurai", sans-serif;
+}
+
+
+.shadow-emergency {
+    box-shadow: 0px 4px 4px #00000040;
+}
