@@ -36,7 +36,7 @@ document.getElementById("heart_plus-9").addEventListener("click", function () {
 
 let coin = 100;
 
-let callHistry = []; // বাইরে ডিফাইন করো, না হলে প্রতিবার খালি হয়ে যাবে
+let callHistry = [];
 
 function makeCall(serviceName, number) {
   if (coin === 0) {
@@ -108,4 +108,51 @@ document.getElementById("clear-histry").addEventListener("click", function () {
   callHistry = [];
   document.getElementById("call-histry-containar").innerText = "";
   alert("কল হিস্ট্রি ক্লিয়ার করা হয়েছে!");
+});
+
+// Oto Akta Bujlam Na catgpt tak ha hlpe nea korlam
+
+async function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand("copy");
+  document.body.removeChild(ta);
+}
+
+// Event delegation
+document.addEventListener("click", async (e) => {
+  const btn = e.target.closest(".copy-btn");
+  if (!btn) return;
+
+  // এখানে .card নেই, তাই outer div কে ধরছি
+  const card = btn.closest(".bg-white");
+  const target = card?.querySelector(".copy-text");
+  const text = target?.innerText?.trim();
+
+  if (!text) {
+    alert("Nothing to copy: .copy-text not found in this card.");
+    return;
+  }
+
+  const original = btn.textContent;
+  btn.disabled = true;
+  try {
+    await copyToClipboard(text);
+    btn.textContent = "Copied!";
+  } catch (err) {
+    console.error(err);
+    btn.textContent = "Copy failed";
+    alert("Copy failed. Your browser may block clipboard on HTTP pages.");
+  } finally {
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.disabled = false;
+    }, 1000);
+  }
 });
