@@ -13,11 +13,11 @@
 
 ## 2.Answer
 
-**A. প্রথমে একটা এলিমেন্ট তৈরি করতে হবে | উদাহরণ : const container = document.createElement("div")**
+**A. প্রথমে একটা এলিমেন্ট তৈরি করতে হবে | উদাহরণ : const container = document.createElement("div")**<br>
 
-**B.তারপর উপরের ওই "div" এ আপনি যা শো দেখাতে চান | উদাহরণ : container.innerText = "Hello World"**
+**B.তারপর উপরের ওই "div" এ আপনি যা শো দেখাতে চান | উদাহরণ : container.innerText = "Hello World"**<br>
 
-**C. এটা এখন রেডি DOM এ দেখানোর জন্য অ্যাপেন্ড করলে হবে | উদাহরণ : document.body.appendChild(container)**
+**C. এটা এখন রেডি DOM এ দেখানোর জন্য অ্যাপেন্ড করলে হবে | উদাহরণ : document.body.appendChild(container)**<br>
 
 ## question 3 What is **Event Bubbling** and how does it work?
 
