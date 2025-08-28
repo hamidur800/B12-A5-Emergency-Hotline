@@ -5,9 +5,9 @@
 ## 1.Answer
 
 **A. getElementById = স্পেসিফিক আইডিকে সিলেক্ট করা যায় ।**<br>
-**B. getElementsByClassName =একসাথে অনেকগুলো ক্লাস কে সিলেক্ট করা যায় ।**<br>
-**C. querySelector =এটা দিয়ে প্রথম যেকোনো আইডি, ক্লাস অথবা ট্যাগকে সিলেক্ট করা যায় ।**<br>
-**D. querySelectorAll =এইটা দিয়ে একই নামের যত আইডি, ক্লাস অথবা ট্যাগ আছে সবগুলোকে একসাথে সিলেক্ট করা যায় ।**<br>
+**B. getElementsByClassName = একসাথে অনেকগুলো ক্লাস কে সিলেক্ট করা যায় ।**<br>
+**C. querySelector = এটা দিয়ে প্রথম যেকোনো আইডি, ক্লাস অথবা ট্যাগকে সিলেক্ট করা যায় ।**<br>
+**D. querySelectorAll = এইটা দিয়ে একই নামের যত আইডি, ক্লাস অথবা ট্যাগ আছে সবগুলোকে একসাথে সিলেক্ট করা যায় ।**<br>
 
 ## question 2 How do you **create and insert a new element into the DOM**?
 
