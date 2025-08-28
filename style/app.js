@@ -111,47 +111,50 @@ document.getElementById("clear-histry").addEventListener("click", function () {
 });
 
 // Oto Akta Bujlam Na catgpt tak ha hlpe nea korlam
+let copyCount = 0;
 
-async function copyToClipboard(text) {
-  if (navigator.clipboard && window.isSecureContext) {
-    await navigator.clipboard.writeText(text);
-    return;
-  }
-  const ta = document.createElement("textarea");
-  ta.value = text;
-  document.body.appendChild(ta);
-  ta.select();
-  document.execCommand("copy");
-  document.body.removeChild(ta);
-}
-
-// Event delegation
 document.addEventListener("click", async (e) => {
   const btn = e.target.closest(".copy-btn");
   if (!btn) return;
 
-  // এখানে .card নেই, তাই outer div কে ধরছি
   const card = btn.closest(".bg-white");
   const target = card?.querySelector(".copy-text");
-  const text = target?.innerText?.trim();
+  const text = target?.innerText.trim();
 
   if (!text) {
-    alert("Nothing to copy: .copy-text not found in this card.");
+    alert("Nothing to copy: .copy-text not found");
     return;
   }
 
-  const original = btn.textContent;
+  async function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+  }
+
+  const original = btn.innerHTML;
   btn.disabled = true;
   try {
     await copyToClipboard(text);
-    btn.textContent = "Copied!";
+    btn.innerHTML = "Copy";
+
+    copyCount++;
+    const counter = document.getElementById("copyCount");
+    if (counter) counter.innerText = copyCount;
   } catch (err) {
     console.error(err);
-    btn.textContent = "Copy failed";
-    alert("Copy failed. Your browser may block clipboard on HTTP pages.");
+    btn.innerHTML = "Copy failed";
+    alert("Copy failed! Use HTTPS or supported browser.");
   } finally {
     setTimeout(() => {
-      btn.textContent = original;
+      btn.innerHTML = original;
       btn.disabled = false;
     }, 1000);
   }

@@ -19,11 +19,11 @@
 
 </head>
 
-<body>
+<body class="hind-madurai">
 
     <!-- header section -->
     <header>
-        <div class="bg-[#D9D9D9] h-[100px]">
+        <div class="bg-[#D9D9D9] h-[100px] header-area">
             <div class="containar">
                 <div class="navbar-section flex justify-between items-center">
                     <div class="header-left flex items-center">
@@ -37,16 +37,17 @@
                     <div class="header-right">
                         <div class="btns-section flex gap-2">
                             <div class="flex justify-evenly w-[100px] rounded-full py-3 bg-[#41ff6b1a]">
-                                <span id="output" class="font-bold text-2xl -mt-1 mr-0.5">0</span>
+                                <span id="output" class="font-bold text-2xl  mr-0.5">0</span>
                                 <img class="h-[30px] w-[30px]" loading="lazy" src="./assets/heart.png" alt="">
                             </div>
                             <div class="flex justify-evenly w-[100px] rounded-full py-3 bg-[#41ff6b1a]">
-                                <span id="coin" class="font-bold text-2xl -mt-1 mr-0.5">100</span>
+                                <span id="coin" class="font-bold text-2xl  mr-0.5">100</span>
                                 <img class="h-[30px] w-[30px]" loading="lazy" src="./assets/coin.png" alt="">
                             </div>
-                            <div class="flex justify-evenly w-[120px] rounded-full py-3 px-2 bg-[#00A63E]">
-                                <span class="font-normal text-2xl text-white -mt-1 mr-0.5">0</span>
-                                <span class="font-normal text-2xl text-white -mt-1 mr-0.5">Copy</span>
+                            <div id="copyCounter"
+                                class="flex justify-evenly w-[120px] rounded-full py-3 px-2 bg-[#00A63E]">
+                                <span id="copyCount" class="font-normal text-2xl text-white  mr-0.5">0</span>
+                                <span class="font-normal text-2xl text-white  mr-0.5">Copy</span>
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,8 @@
             <div class="flex flex-col justify-center items-center gap-2.5 py-2.5">
                 <img loading="lazy" src="./assets/logo-dark.png" alt="" class="hero-logo h-24 w-24 mt-2">
                 <h2 class="hero_title font-semibold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h2>
-                <p class="hero_description font-semibold text-xl text-white">Government Emergency Services at Your
+                <p class="hero_description font-semibold text-xl text-white text-center">Government Emergency Services
+                    at Your
                     Fingertip
                     – A
                     Project by Government of the
@@ -73,10 +75,10 @@
     <!-- card section -->
 
     <section class="bg-[#f5fff6]">
-        <div class="containar w-full grid grid-cols-[77%_23%] gap-6 py-10 px-7">
+        <div class="containar w-full grid grid-cols-[77%_23%] gap-6 py-10 px-7 cards_alin">
 
             <!-- Left Content (70%) -->
-            <div class="grid grid-cols-3 grid-rows-3 gap-6">
+            <div class="grid grid-cols-3 grid-rows-3 gap-6 card-alin">
                 <!-- Card 1 -->
                 <div class="bg-white shadow-emergency rounded-xl p-5  ">
 
@@ -111,12 +113,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-1"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-1" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -155,12 +154,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-2"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-2" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -199,12 +195,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-3"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-3" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -243,12 +236,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-4"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-4" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -287,12 +277,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-5"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-5" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -331,12 +318,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-6"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-6" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -375,12 +359,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-7"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-7" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -419,12 +400,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn flex-1 cursor-copy copy-button">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-8"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-8" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -463,12 +441,9 @@
 
                     <!-- Buttons -->
                     <div class="flex gap-2 mt-4">
-                        <button
-                            class="copy-btn flex-1 cursor-copy border rounded-lg py-2 text-gray-600 hover:bg-gray-100">
+                        <button class="copy-btn copy-button flex-1  ">
                             <i class='bx bx-copy bx-rotate-270'></i> Copy</button>
-                        <button id="callBtn-9"
-                            class="flex-1  bg-green-600 text-white rounded-lg py-2 hover:bg-green-700"><i
-                                class='bx bx-phone'></i> Call</button>
+                        <button id="callBtn-9" class="flex-1 card-button"><i class='bx bx-phone'></i> Call</button>
                     </div>
 
                 </div>
@@ -485,9 +460,7 @@
                                 <i class='bx bx-history mr-1'></i> <span>Call History</span>
                             </div>
                             <div class="">
-                                <button id="clear-histry"
-                                    class="bg-[#00A63E] hover:bg-[#366e4b] text-white px-5 py-2 rounded-full"
-                                    type="button">Clear</button>
+                                <button id="clear-histry" class="cards_button" type="button">Clear</button>
                             </div>
                         </div>
                     </div>
@@ -503,8 +476,7 @@
     </section>
 
 
-
-    <script src="./app.js"></script>
+    <script src="./style/app.js"></script>
 </body>
 
 </html>

@@ -3,15 +3,119 @@
 @import "tailwindcss";
 
 .containar {
-    max-width: 1800px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .hind-madurai {
   font-family: "Hind Madurai", sans-serif;
 }
 
-
 .shadow-emergency {
-    box-shadow: 0px 4px 4px #00000040;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.cards_button {
+  background-color: #00a63e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cards_button:hover {
+  background-color: #008431; /* hover color */
+}
+
+.card-button {
+  background-color: #00a63e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #008431; /* hover color */
+}
+
+.copy-button {
+  /* background-color: #00A63E; */
+  color: #000000;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  color: #ffffff;
+  background-color: #000000; /* hover color */
+}
+
+/* reponsive for mobaile */
+
+/* Common helper */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile: max-width 576px */
+@media (max-width: 576px) {
+  .containar {
+    max-width: 576px;
+    margin: 0 auto;
+  }
+
+  .header-area {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero_title {
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .navbar-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hero_description {
+    font-size: medium;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .cards_alin {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card-alin {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+  .containar {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .cards_alin {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
