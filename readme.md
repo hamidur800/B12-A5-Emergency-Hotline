@@ -1,6 +1,6 @@
 ### My Answer :
 
-## question 1 What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+## Question 1 What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 ## 1.Answer
 
@@ -9,7 +9,7 @@
 **C. querySelector = এটা দিয়ে প্রথম যেকোনো আইডি, ক্লাস অথবা ট্যাগকে সিলেক্ট করা যায় ।**<br>
 **D. querySelectorAll = এইটা দিয়ে একই নামের যত আইডি, ক্লাস অথবা ট্যাগ আছে সবগুলোকে একসাথে সিলেক্ট করা যায় ।**<br>
 
-## question 2 How do you **create and insert a new element into the DOM**?
+## Question 2 How do you **create and insert a new element into the DOM**?
 
 ## 2.Answer
 
@@ -19,7 +19,7 @@
 
 **C. এটা এখন রেডি DOM এ দেখানোর জন্য অ্যাপেন্ড করলে হবে । উদাহরণ : document.body.appendChild(container)**<br>
 
-## question 3 What is **Event Bubbling** and how does it work?
+## Question 3 What is **Event Bubbling** and how does it work?
 
 ## 3.Answer
 
@@ -27,13 +27,13 @@
 console.log("Button Clickd!");<br>
 });**
 
-## question 4 What is **Event Delegation** in JavaScript? Why is it useful?
+## Question 4 What is **Event Delegation** in JavaScript? Why is it useful?
 
 ## 4.Answer
 
 **Event Delegation এটা দিয়ে parent element কে সিলেক্ট করে তার যত child element আছে সবগুলাকে কন্ট্রোল করা যায় যদি কোন নতুন child element এড করা হয় সেটা ডায়নামিকভাবে যোগ হয়ে যায় ।**<br>
 
-## question 5 What is the difference between **preventDefault() and stopPropagation()** methods?
+## Question 5 What is the difference between **preventDefault() and stopPropagation()** methods?
 
 ## 5.Answer
 
